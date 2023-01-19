@@ -4,7 +4,7 @@ function LargeCard({ img, title, description, buttonText }) {
   return (
     <section className='relative py-16 hover:scale-105 transition transform duration-200 ease-out cursor-pointer'>
       <div className='relative h-96 min-w-[300px]'>
-        <Image className='object-cover rounded-2xl' src={img} fill />
+        <Image alt='Large card image' className='object-cover rounded-2xl' src={img} fill />
       </div>
       <div className='absolute top-32 left-12'>
         <h1 className='text-4xl my-2 font-semibold'>{title}</h1>

@@ -1,22 +1,16 @@
 import Image from 'next/image'
 
-import {
-  BiSearch,
-  BiGlobe,
-  BiMenu,
-  BiUserCircle
-} from 'react-icons/bi'
+import { BiSearch, BiGlobe, BiMenu, BiUserCircle } from 'react-icons/bi'
 
 let airbnbLogo =
   'https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg'
-
 
 function Header() {
   return (
     <header className='sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10'>
       {/* Left - Logo*/}
       <div className='relative flex items-center cursor-pointer my-auto'>
-        <Image src={airbnbLogo} width={128} height={128} />
+        <Image alt='Airbnb Logo' src={airbnbLogo} width={128} height={128} />
       </div>
 
       {/* Middle - Search*/}
@@ -32,11 +26,11 @@ function Header() {
       {/* Right*/}
       <div className='flex items-center space-x-4 justify-end text-gray-500'>
         <p className='hidden md:inline cursor-pointer'>Become a host</p>
-        <BiGlobe className='cursor-pointer w-6 h-6'/>
+        <BiGlobe className='cursor-pointer w-6 h-6' />
 
         <div className='flex items-center space-x-2 border-2 p-2 rounded-full cursor-pointer'>
-          <BiMenu className='w-6 h-6'/>
-          <BiUserCircle className='w-6 h-6'/>
+          <BiMenu className='w-6 h-6' />
+          <BiUserCircle className='w-6 h-6' />
         </div>
       </div>
     </header>
